@@ -88,12 +88,14 @@
 
     .ticker .wrapper {
       display: inline-block;
-      animation: scroll 90s linear infinite forwards;
+      animation: scroll 30s linear infinite forwards;
       animation-delay: 0s; animation-fill-mode: both;
     }
 
     @keyframes scroll {
-      0% { transform: translateX(100%); }
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
       100% { transform: translateX(-100%); }
     }
 
