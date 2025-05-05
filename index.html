@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nita Septiani - Portfolio</title>
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Nita Septiani</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#projects">Projects</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle">Toggle Theme</button>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <section id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>[Tuliskan profil singkat kamu]</p>
+    </section>
+
+    <section id="timeline" data-aos="fade-up">
+      <h2>Experience Timeline</h2>
+      <div class="timeline">
+        [Timeline karier kamu di sini]
+      </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          [Project slides]
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section id="blog" data-aos="fade-up">
+      <h2>Blog & Articles</h2>
+      <ul>
+        [Daftar artikel kamu]
+      </ul>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/xvgaaoer" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Nita Septiani</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
