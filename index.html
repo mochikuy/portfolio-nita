@@ -61,28 +61,48 @@
       overflow: hidden;
       white-space: nowrap;
       box-sizing: border-box;
-      padding: 10px 0;
-    }
-
-    .ticker .track {
-      display: inline-block;
-      animation: scroll 30s linear infinite;
-    }
-
-    .skill-box {
-      display: inline-block;
       background: rgba(255,255,255,0.1);
-      color: #fff;
-      border: 1px solid rgba(255,255,255,0.3);
-      padding: 6px 12px;
-      margin: 5px;
-      border-radius: 5px;
-      font-size: 14px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .ticker span {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 0 10px;
+      padding: 5px 15px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .ticker .wrapper {
+      display: inline-block;
+      animation: scroll 40s linear infinite;
     }
 
     @keyframes scroll {
       0% { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 10px;
+      flex: 1 1 280px;
+      box-sizing: border-box;
+    }
+
+    .card a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -128,39 +148,29 @@
   <section id="skills" class="animate__animated animate__fadeInUp">
     <h2>Skills</h2>
     <div class="ticker">
-      <div class="track">
-        <span class="skill-box">AWS</span>
-        <span class="skill-box">Azure</span>
-        <span class="skill-box">GCP</span>
-        <span class="skill-box">Terraform</span>
-        <span class="skill-box">Kubernetes</span>
-        <span class="skill-box">Docker</span>
-        <span class="skill-box">Jenkins</span>
-        <span class="skill-box">GitHub Actions</span>
-        <span class="skill-box">Linux</span>
-        <span class="skill-box">Ansible</span>
-        <span class="skill-box">Prometheus</span>
-        <span class="skill-box">Grafana</span>
-        <span class="skill-box">MongoDB</span>
-        <span class="skill-box">PostgreSQL</span>
-        <span class="skill-box">Shell Scripting</span>
-        <span class="skill-box">CI/CD</span>
-        <span class="skill-box">DevSecOps</span>
-        <span class="skill-box">Nginx</span>
-        <span class="skill-box">GitLab</span>
-        <span class="skill-box">Cloud Architecture</span>
-        <span class="skill-box">Monitoring</span>
-        <span class="skill-box">VPN</span>
-        <span class="skill-box">MikroTik</span>
-        <span class="skill-box">Agile</span>
-        <span class="skill-box">Automation</span>
+      <div class="wrapper">
+        <span>AWS</span><span>Azure</span><span>GCP</span><span>Terraform</span><span>Kubernetes</span><span>Docker</span><span>Jenkins</span><span>GitHub Actions</span><span>Linux</span><span>Ansible</span><span>Prometheus</span><span>Grafana</span><span>MongoDB</span><span>PostgreSQL</span><span>Shell Scripting</span><span>CI/CD</span><span>DevSecOps</span><span>Nginx</span><span>GitLab</span><span>Cloud Architecture</span><span>Monitoring</span><span>VPN</span><span>MikroTik</span><span>Agile</span><span>Automation</span>
       </div>
     </div>
   </section>
 
   <section id="blog" class="animate__animated animate__fadeInUp">
     <h2>Blog</h2>
-    <p>I regularly share thoughts, tutorials, and DevOps insights on <a href="https://medium.com/@nitaasli" target="_blank">my Medium blog</a>. Check it out!</p>
+    <p>I regularly share thoughts, tutorials, and DevOps insights on <a href="https://medium.com/@nitaasli" target="_blank">my Medium blog</a>. Here are a few highlights:</p>
+    <div class="card-container">
+      <div class="card">
+        <a href="https://medium.com/@nitaasli/solved-gagal-ssh-ke-ec2-karena-ufw-aktif-ini-cara-aku-recovery-nya-tanpa-data-hilang-6a024f3f95a0" target="_blank">Solved: Gagal SSH ke EC2 karena UFW Aktif</a>
+        <p>Cara recovery tanpa kehilangan data ketika server EC2 terkunci akibat firewall UFW aktif.</p>
+      </div>
+      <div class="card">
+        <a href="https://medium.com/@nitaasli/penataan-ulang-infrastruktur-dengan-docker-897b7cd607e9" target="_blank">Penataan Ulang Infrastruktur dengan Docker</a>
+        <p>Best practice menyusun ulang arsitektur sistem menggunakan Docker container dan microservice.</p>
+      </div>
+      <div class="card">
+        <a href="https://medium.com/@nitaasli/containerization-empowering-software-deployment-and-scalability-66cd43193616" target="_blank">Containerization & Scalability</a>
+        <p>Mengenal konsep container, manfaatnya, dan bagaimana meningkatkan efisiensi deployment & scale up.</p>
+      </div>
+    </div>
   </section>
 
   <section id="contact" class="animate__animated animate__fadeInUp">
