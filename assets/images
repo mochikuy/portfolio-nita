@@ -1,5 +1,0 @@
-<div class="swiper-wrapper">
-  <div class="swiper-slide"><img src="assets/images/project1.png" alt="Project 1"></div>
-  <div class="swiper-slide"><img src="assets/images/project2.png" alt="Project 2"></div>
-  <!-- Tambahkan project lain -->
-</div>
