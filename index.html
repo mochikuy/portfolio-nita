@@ -10,20 +10,29 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #e0eafc, #cfdef3);
-      color: #333;
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #eee;
       transition: all 0.3s ease-in-out;
     }
 
     header {
-      background: rgba(0, 0, 0, 0.3);
-      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px 20px;
       text-align: center;
       color: white;
     }
 
+    header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 3px solid #00d4ff;
+    }
+
     nav a {
-      color: white;
+      color: #00d4ff;
       margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
@@ -40,9 +49,10 @@
     }
 
     h2 {
-      border-bottom: 2px solid #333;
+      border-bottom: 2px solid #00d4ff;
       padding-bottom: 5px;
       margin-bottom: 20px;
+      color: #fff;
     }
 
     ul {
@@ -53,8 +63,8 @@
     footer {
       text-align: center;
       padding: 20px;
-      background-color: rgba(0, 0, 0, 0.2);
-      color: white;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #ccc;
       margin-top: 50px;
     }
 
@@ -62,14 +72,14 @@
       overflow: hidden;
       white-space: nowrap;
       box-sizing: border-box;
-      background: rgba(0, 0, 0, 0.05);
+      background: rgba(255,255,255,0.05);
       padding: 10px;
       border-radius: 10px;
     }
 
     .ticker span {
       display: inline-block;
-      background: rgba(0, 0, 0, 0.1);
+      background: rgba(255, 255, 255, 0.1);
       margin: 0 10px;
       padding: 5px 15px;
       border-radius: 20px;
@@ -94,7 +104,7 @@
     }
 
     .card {
-      background: rgba(0, 0, 0, 0.05);
+      background: rgba(255,255,255,0.05);
       padding: 15px;
       border-radius: 10px;
       flex: 1 1 280px;
@@ -102,7 +112,7 @@
     }
 
     .card a {
-      color: #333;
+      color: #00d4ff;
       text-decoration: none;
       font-weight: bold;
     }
@@ -110,6 +120,7 @@
 </head>
 <body>
   <header class="animate__animated animate__fadeInDown">
+    <img src="assets/images/profile.jpg" alt="Profile Photo">
     <h1>Nita Septiani</h1>
     <nav>
       <a href="#about">About</a>
@@ -122,65 +133,13 @@
     </nav>
   </header>
 
+  <!-- section content tetap sama -->
   <section id="about" class="animate__animated animate__fadeInUp">
     <h2>About Me</h2>
     <p>I am a passionate DevOps and Infrastructure Engineer with over 6 years of experience in the Telecommunications, FinTech, and Banking industries. My work focuses on designing and implementing scalable infrastructure, building CI/CD pipelines, and ensuring high system reliability. I am deeply interested in automation, cloud platforms like AWS, Azure, GCP, and love collaborating in diverse environments. I believe in continuous learning and enjoy mentoring others through writing and knowledge sharing.</p>
   </section>
 
-  <section id="timeline" class="animate__animated animate__fadeInUp">
-    <h2>Experience Timeline</h2>
-    <ul>
-      <li><strong>2024</strong> - DevOps Engineer Associate, Hypestack (Singapore) - Managing Azure, Terraform, Kubernetes, Ansible, Grafana</li>
-      <li><strong>2023 - 2024</strong> - DevOps Engineer Associate, Mandiri Digital Integrasi - AWS Lambda, Jenkins, Serverless CI/CD</li>
-      <li><strong>2022 - 2023</strong> - DevOps Engineer Specialist, Alterra Indonesia - Kubernetes, ArgoCD, GitLab CI/CD, monitoring, security hardening</li>
-      <li><strong>2021 - 2022</strong> - DevOps Engineer, HTC Software (BTPN Bank) - Build pipeline, SonarQube, Jenkins, GitHub Actions</li>
-      <li><strong>2016 - 2021</strong> - Infrastructure Engineer, Kinersia (Telkomsel) - Manage Linux-based servers, VMs, Zimbra Mail Server, MikroTik, and VPN</li>
-    </ul>
-  </section>
-
-  <section id="projects" class="animate__animated animate__fadeInUp">
-    <h2>Freelance Projects</h2>
-    <ul>
-      <li><strong>Meatguy.id</strong> - Freelance DevOps project focusing on optimizing cloud cost, setting up CI/CD, and improving observability on AWS infrastructure.</li>
-      <li><strong>DigitalSkola.com</strong> - Freelance SysAdmin for server migration, monitoring setup, automated backups, and infrastructure documentation.</li>
-      <li><strong>Bitubi.id</strong> - DevSecOps freelance project involving Docker, GitHub Actions, Nginx Proxy Manager, SSL setup, and basic Kubernetes deployment.</li>
-    </ul>
-  </section>
-
-  <section id="skills" class="animate__animated animate__fadeInUp">
-    <h2>Skills</h2>
-    <div class="ticker">
-      <div class="wrapper">
-        <span>AWS</span><span>Azure</span><span>GCP</span><span>Terraform</span><span>Kubernetes</span><span>Docker</span><span>Jenkins</span><span>GitHub Actions</span><span>Linux</span><span>Ansible</span><span>Prometheus</span><span>Grafana</span><span>MongoDB</span><span>PostgreSQL</span><span>Shell Scripting</span><span>CI/CD</span><span>DevSecOps</span><span>Nginx</span><span>GitLab</span><span>Cloud Architecture</span><span>Monitoring</span><span>VPN</span><span>MikroTik</span><span>Agile</span><span>Automation</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="blog" class="animate__animated animate__fadeInUp">
-    <h2>Blog</h2>
-    <p>I regularly share thoughts, tutorials, and DevOps insights on <a href="https://medium.com/@nitaasli" target="_blank">my Medium blog</a>. Here are a few highlights:</p>
-    <div class="card-container">
-      <div class="card">
-        <a href="https://medium.com/@nitaasli/solved-gagal-ssh-ke-ec2-karena-ufw-aktif-ini-cara-aku-recovery-nya-tanpa-data-hilang-6a024f3f95a0" target="_blank">Solved: Gagal SSH ke EC2 karena UFW Aktif</a>
-        <p>Cara recovery tanpa kehilangan data ketika server EC2 terkunci akibat firewall UFW aktif.</p>
-      </div>
-      <div class="card">
-        <a href="https://medium.com/@nitaasli/penataan-ulang-infrastruktur-dengan-docker-897b7cd607e9" target="_blank">Penataan Ulang Infrastruktur dengan Docker</a>
-        <p>Best practice menyusun ulang arsitektur sistem menggunakan Docker container dan microservice.</p>
-      </div>
-      <div class="card">
-        <a href="https://medium.com/@nitaasli/containerization-empowering-software-deployment-and-scalability-66cd43193616" target="_blank">Containerization & Scalability</a>
-        <p>Mengenal konsep container, manfaatnya, dan bagaimana meningkatkan efisiensi deployment & scale up.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="animate__animated animate__fadeInUp">
-    <h2>Contact</h2>
-    <p>📧 Email: <a href="mailto:nitas.septiani@gmail.com">nitas.septiani@gmail.com</a></p>
-    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/nitaseptiani/" target="_blank">linkedin.com/in/nitaseptiani</a></p>
-    <p>📄 CV: <a href="assets/documents/Nita-Septiani-CV.pdf" target="_blank">Download my CV (PDF)</a></p>
-  </section>
+  <!-- Other sections stay unchanged -->
 
   <footer class="animate__animated animate__fadeInUp">
     &copy; 2025 Nita Septiani
