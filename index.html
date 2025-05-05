@@ -88,8 +88,8 @@
 
     .ticker .wrapper {
       display: inline-block;
-      animation: scroll 90s linear infinite;
-      animation-delay: 0s;
+      animation: scroll 90s linear infinite forwards;
+      animation-delay: 0s; animation-fill-mode: both;
     }
 
     @keyframes scroll {
