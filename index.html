@@ -5,26 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nita Septiani - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+      color: white;
+      margin-top: 50px;
+    }
+
+    .ticker {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+
+    .ticker p {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 15s linear infinite;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <header class="animate__animated animate__fadeInDown">
     <h1>Nita Septiani</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#timeline">Timeline</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <a href="#blog">Blog</a>
       <a href="#contact">Contact</a>
       <button id="toggle-theme" style="float:right; margin-left:20px;">Toggle Theme</button>
     </nav>
   </header>
 
-  <section id="about">
+  <section id="about" class="animate__animated animate__fadeInUp">
     <h2>About Me</h2>
     <p>I am a passionate DevOps and Infrastructure Engineer with over 6 years of experience in the Telecommunications, FinTech, and Banking industries. My work focuses on designing and implementing scalable infrastructure, building CI/CD pipelines, and ensuring high system reliability. I am deeply interested in automation, cloud platforms like AWS, Azure, GCP, and love collaborating in diverse environments. I believe in continuous learning and enjoy mentoring others through writing and knowledge sharing.</p>
   </section>
 
-  <section id="timeline">
+  <section id="timeline" class="animate__animated animate__fadeInUp">
     <h2>Experience Timeline</h2>
     <ul>
       <li><strong>2024</strong> - DevOps Engineer Associate, Hypestack (Singapore) - Managing Azure, Terraform, Kubernetes, Ansible, Grafana</li>
@@ -35,7 +105,7 @@
     </ul>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="animate__animated animate__fadeInUp">
     <h2>Freelance Projects</h2>
     <ul>
       <li><strong>Meatguy.id</strong> - Freelance DevOps project focusing on optimizing cloud cost, setting up CI/CD, and improving observability on AWS infrastructure.</li>
@@ -44,19 +114,26 @@
     </ul>
   </section>
 
-  <section id="blog">
-    <h2>Blog</h2>
-    <p>Coming soon! I will share insights and tutorials about DevOps practices, infrastructure as code, cloud migration, and automation using tools like Terraform, Ansible, Jenkins, and AWS services.</p>
+  <section id="skills" class="animate__animated animate__fadeInUp">
+    <h2>Skills</h2>
+    <div class="ticker">
+      <p>AWS · Azure · GCP · Terraform · Kubernetes · Docker · Jenkins · GitHub Actions · Linux · Ansible · Prometheus · Grafana · MongoDB · PostgreSQL · Shell Scripting · CI/CD · DevSecOps · Nginx · GitLab · Cloud Architecture · Monitoring · VPN · MikroTik · Agile · Automation</p>
+    </div>
   </section>
 
-  <section id="contact">
+  <section id="blog" class="animate__animated animate__fadeInUp">
+    <h2>Blog</h2>
+    <p>I regularly share thoughts, tutorials, and DevOps insights on <a href="https://medium.com/@nitaasli" target="_blank">my Medium blog</a>. Check it out!</p>
+  </section>
+
+  <section id="contact" class="animate__animated animate__fadeInUp">
     <h2>Contact</h2>
     <p>📧 Email: <a href="mailto:nitas.septiani@gmail.com">nitas.septiani@gmail.com</a></p>
     <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/nitaseptiani/" target="_blank">linkedin.com/in/nitaseptiani</a></p>
     <p>📄 CV: <a href="assets/documents/Nita-Septiani-CV.pdf" target="_blank">Download my CV (PDF)</a></p>
   </section>
 
-  <footer>
+  <footer class="animate__animated animate__fadeInUp">
     &copy; 2025 Nita Septiani
   </footer>
 
