@@ -61,16 +61,27 @@
       overflow: hidden;
       white-space: nowrap;
       box-sizing: border-box;
+      padding: 10px 0;
     }
 
-    .ticker p {
+    .ticker .track {
       display: inline-block;
-      padding-left: 100%;
-      animation: scroll 15s linear infinite;
+      animation: scroll 30s linear infinite;
+    }
+
+    .skill-box {
+      display: inline-block;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 6px 12px;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 14px;
     }
 
     @keyframes scroll {
-      0% { transform: translateX(0%); }
+      0% { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
     }
   </style>
@@ -117,7 +128,33 @@
   <section id="skills" class="animate__animated animate__fadeInUp">
     <h2>Skills</h2>
     <div class="ticker">
-      <p>AWS · Azure · GCP · Terraform · Kubernetes · Docker · Jenkins · GitHub Actions · Linux · Ansible · Prometheus · Grafana · MongoDB · PostgreSQL · Shell Scripting · CI/CD · DevSecOps · Nginx · GitLab · Cloud Architecture · Monitoring · VPN · MikroTik · Agile · Automation</p>
+      <div class="track">
+        <span class="skill-box">AWS</span>
+        <span class="skill-box">Azure</span>
+        <span class="skill-box">GCP</span>
+        <span class="skill-box">Terraform</span>
+        <span class="skill-box">Kubernetes</span>
+        <span class="skill-box">Docker</span>
+        <span class="skill-box">Jenkins</span>
+        <span class="skill-box">GitHub Actions</span>
+        <span class="skill-box">Linux</span>
+        <span class="skill-box">Ansible</span>
+        <span class="skill-box">Prometheus</span>
+        <span class="skill-box">Grafana</span>
+        <span class="skill-box">MongoDB</span>
+        <span class="skill-box">PostgreSQL</span>
+        <span class="skill-box">Shell Scripting</span>
+        <span class="skill-box">CI/CD</span>
+        <span class="skill-box">DevSecOps</span>
+        <span class="skill-box">Nginx</span>
+        <span class="skill-box">GitLab</span>
+        <span class="skill-box">Cloud Architecture</span>
+        <span class="skill-box">Monitoring</span>
+        <span class="skill-box">VPN</span>
+        <span class="skill-box">MikroTik</span>
+        <span class="skill-box">Agile</span>
+        <span class="skill-box">Automation</span>
+      </div>
     </div>
   </section>
 
