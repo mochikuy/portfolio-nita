@@ -4,18 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nita Septiani - Portfolio</title>
-
-  <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Header -->
   <header>
     <h1>Nita Septiani</h1>
     <nav>
@@ -24,61 +15,51 @@
       <a href="#projects">Projects</a>
       <a href="#blog">Blog</a>
       <a href="#contact">Contact</a>
-      <button id="theme-toggle">Toggle Theme</button>
+      <button id="toggle-theme" style="float:right; margin-left:20px;">Toggle Theme</button>
     </nav>
   </header>
 
-  <!-- Main content -->
-  <main>
-    <section id="about" data-aos="fade-up">
-      <h2>About Me</h2>
-      <p>[Tuliskan profil singkat kamu]</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate DevOps and Infrastructure Engineer with over 6 years of experience in the Telecommunications, FinTech, and Banking industries. My work focuses on designing and implementing scalable infrastructure, building CI/CD pipelines, and ensuring high system reliability. I am deeply interested in automation, cloud platforms like AWS, Azure, GCP, and love collaborating in diverse environments. I believe in continuous learning and enjoy mentoring others through writing and knowledge sharing.</p>
+  </section>
 
-    <section id="timeline" data-aos="fade-up">
-      <h2>Experience Timeline</h2>
-      <div class="timeline">
-        [Timeline karier kamu di sini]
-      </div>
-    </section>
+  <section id="timeline">
+    <h2>Experience Timeline</h2>
+    <ul>
+      <li><strong>2024</strong> - DevOps Engineer Associate, Hypestack (Singapore) - Managing Azure, Terraform, Kubernetes, Ansible, Grafana</li>
+      <li><strong>2023 - 2024</strong> - DevOps Engineer Associate, Mandiri Digital Integrasi - AWS Lambda, Jenkins, Serverless CI/CD</li>
+      <li><strong>2022 - 2023</strong> - DevOps Engineer Specialist, Alterra Indonesia - Kubernetes, ArgoCD, GitLab CI/CD, monitoring, security hardening</li>
+      <li><strong>2021 - 2022</strong> - DevOps Engineer, HTC Software (BTPN Bank) - Build pipeline, SonarQube, Jenkins, GitHub Actions</li>
+      <li><strong>2016 - 2021</strong> - Infrastructure Engineer, Kinersia (Telkomsel) - Manage Linux-based servers, VMs, Zimbra Mail Server, MikroTik, and VPN</li>
+    </ul>
+  </section>
 
-    <section id="projects" data-aos="fade-up">
-      <h2>Projects</h2>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          [Project slides]
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </section>
+  <section id="projects">
+    <h2>Freelance Projects</h2>
+    <ul>
+      <li><strong>Meatguy.id</strong> - Freelance DevOps project focusing on optimizing cloud cost, setting up CI/CD, and improving observability on AWS infrastructure.</li>
+      <li><strong>DigitalSkola.com</strong> - Freelance SysAdmin for server migration, monitoring setup, automated backups, and infrastructure documentation.</li>
+      <li><strong>Bitubi.id</strong> - DevSecOps freelance project involving Docker, GitHub Actions, Nginx Proxy Manager, SSL setup, and basic Kubernetes deployment.</li>
+    </ul>
+  </section>
 
-    <section id="blog" data-aos="fade-up">
-      <h2>Blog & Articles</h2>
-      <ul>
-        [Daftar artikel kamu]
-      </ul>
-    </section>
+  <section id="blog">
+    <h2>Blog</h2>
+    <p>Coming soon! I will share insights and tutorials about DevOps practices, infrastructure as code, cloud migration, and automation using tools like Terraform, Ansible, Jenkins, and AWS services.</p>
+  </section>
 
-    <section id="contact" data-aos="fade-up">
-      <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/xvgaaoer" method="POST">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Message"></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:nitas.septiani@gmail.com">nitas.septiani@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/nitaseptiani/" target="_blank">linkedin.com/in/nitaseptiani</a></p>
+    <p>📄 CV: <a href="assets/documents/Nita-Septiani-CV.pdf" target="_blank">Download my CV (PDF)</a></p>
+  </section>
 
   <footer>
-    <p>© 2025 Nita Septiani</p>
+    &copy; 2025 Nita Septiani
   </footer>
 
-  <!-- JS -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="scripts.js"></script>
 </body>
 </html>
