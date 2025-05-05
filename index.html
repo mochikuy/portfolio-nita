@@ -10,7 +10,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
       color: #eee;
       transition: all 0.3s ease-in-out;
     }
@@ -99,19 +99,15 @@
       100% { transform: translateX(-100%); }
     }
 
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+    $1
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 212, 255, 0.25);
     }
 
-    .card {
-      background: rgba(255,255,255,0.05);
-      padding: 15px;
-      border-radius: 10px;
-      flex: 1 1 280px;
-      box-sizing: border-box;
-    }
+    $1
+  transition: transform 0.3s ease, box-shadow 0.3s ease;}
 
     .card a {
       color: #00d4ff;
